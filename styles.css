@@ -1,0 +1,107 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    /* Колір з прозорістю */
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(120%);
+    /* Збільшення яскравості */
+    z-index: -2;
+}
+
+
+
+header,
+footer {
+    background-color: #333333ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+main {
+    padding: 2rem;
+}
+
+/* Стилі для секції */
+section {
+    margin-bottom: 2rem;
+}
+.main-menu {
+    display: none;
+    /* Початково приховуємо меню */
+}
+
+/* Відображення меню при кліку на кнопку */
+.show-menu .main-menu {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .burger-menu-button {
+        display: none;
+        /* Ховаємо кнопку на великих екранах */
+    }
+
+    .main-menu {
+        display: block !important;
+        /* Показуємо меню на великих екранах */
+    }
+
+    
+
+}

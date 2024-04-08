@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют - Про нас</title>
+    <style>
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    /* Колір з прозорістю */
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(120%);
+    /* Збільшення яскравості */
+    z-index: -2;
+}
+
+header,
+footer {
+    background-color: #333333ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Сховати бургер-меню на початку */
+.burger-menu {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.burger-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-menu li {
+    margin: 5px 0;
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.burger-menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+@media only screen and (min-width: 768px) {
+    .burger-menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Конвертер валют - Про нас</h1>
+        <div class="menu">
+            <a href="index.html">Головна</a>
+            <a href="about.html" class="active">Про нас</a>
+            <a href="services.html">Послуги</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="contact.html">Контакти</a>
+        </div>
+        <div class="burger-menu-button">
+            <button onclick="toggleMenu()">Меню</button>
+        </div>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html" class="active">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+        </header>
+        <main>
+            <h2>Ми - це моя біполярка, яка працює над створенням зручного та надійного конвертера валют.</h2>
+            <img src="S5s.gif" style="float: right; margin-right: 20px;">
+            <section>
+                <h2>Наша команда</h2>
+                <ul>
+                    <li>Іван Кіргван - засновник</li>
+                    <li>Петро Щур - керівник відділу розробки</li>
+                    <li>Папа Карло - графічний дизайнер</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Наша місія</h2>
+                <p>Ми прагнемо забезпечити наших користувачів надійним та зручним сервісом конвертації валют для їх потреб.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Конвертер валют</p>
+        </footer>
+        
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.burger-menu');
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            }
+        </script>
+        </body>
+        
+        </html>

@@ -1,0 +1,228 @@
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    /* Колір з прозорістю */
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Збільшення яскравості */
+    z-index: -2;
+}
+
+
+
+header,
+footer {
+    background-color: #333333ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+.burger-menu {
+    display: none;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.burger-menu ul {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-menu li {
+    margin: 5px 0;
+}
+
+.burger-menu a {
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.burger-menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+table {
+    font-size: 15px;
+}
+
+.menu {
+    display: none;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+    width: 100%;
+    /* Ширина поля вводу */
+}
+
+
+
+/* Стилі для кнопки Надіслати */
+.button[type="submit"] {
+    padding: 5px 15px;
+    background-color: #326380;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+@media only screen and (min-width: 943px) {
+
+    .burger-menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ section .g{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ img {
+     max-width: 45%;
+     margin-bottom: 100px;
+ }
+
+}
+
+
+@media only screen and (max-width: 943px) {
+   
+section .g {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+    form {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+ button {
+     margin-top: 25px;
+     scale: 2;
+ }
+
+}

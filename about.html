@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют - Про нас</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Конвертер валют - Про нас</h1>
+        <div class="burger-menu-button">
+            <button onclick="toggleMenu()">Меню</button>
+        </div>
+        <nav class="burger-menu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html"class="active">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <a href="index.html">Головна</a>
+            <a href="about.html"class="active">Про нас</a>
+            <a href="services.html">Послуги</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="contact.html">Контакти</a>
+            <a href="ff.html">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <section class="b">
+        <img src="S5s.gif" style="float: right; margin-right: 20px;">
+    </section>
+        <h2>Ми - це моя біполярка, яка працює над створенням зручного та надійного конвертера валют.</h2>
+        
+        <section>
+            <h2>Наша команда</h2>
+            <ul>
+                <li>Іван Кіргван - засновник</li>
+                <li>Петро Щур - керівник відділу розробки</li>
+                <li>Папа Карло - графічний дизайнер</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Наша місія</h2>
+            <p>Ми прагнемо забезпечити наших користувачів надійним та зручним сервісом конвертації валют для їх потреб.
+            </p>
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Конвертер валют</p>
+    </footer>
+    <script>
+       function toggleMenu() {
+            const menu = document.querySelector('.burger-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+
+</html>

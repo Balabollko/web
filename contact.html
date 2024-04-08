@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют - Контакти</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+<header>
+    <h1>Конвертер валют - Контакти</h1>
+    <div class="burger-menu-button">
+        <button onclick="toggleMenu()">Меню</button>
+    </div>
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="contact.html"class="active">Контакти</a></li>
+        </ul>
+    </nav>
+    <nav class="menu">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="services.html">Послуги</a>
+        <a href="gallery.html">Фотогалерея</a>
+        <a href="contact.html" class="active">Контакти</a>
+    </nav>
+</header>
+    <main>
+        <section class="g">
+<img src="f.gif" style="float: left; margin-right: 20px; margin-bottom: 20px;">
+<img src="Vn0M.gif" style="float: right; margin-left: 20px; margin-bottom: 20px;">
+</section>
+        <section>
+            <form>
+                 <h2>Форма зворотнього зв'язку</h2>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <div class="sub">
+                <button type="submit">Надіслати</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h1>Наші контактні дані</h1>
+            <p>Адреса: вул. Домашня, 1, м. Лєнтяївка</p>
+            <p>Телефон: +3800766633</p>
+            <p>Email: yazadovbavsya@chill.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Конвертер валют</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.burger-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+
+</html>

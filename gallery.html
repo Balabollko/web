@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют - Фотогалерея</title>
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <h1>Конвертер валют - Фотогалерея</h1>
+        <div class="burger-menu-button">
+            <button onclick="toggleMenu()">Меню</button>
+        </div>
+        <nav class="burger-menu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="gallery.html" class="active">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <nav class="menu">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="services.html">Послуги</a>
+            <a href="gallery.html" class="active">Фотогалерея</a>
+            <a href="contact.html">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Наша фотогалерея</h2>
+            <div class="gallery">
+                <img src="image6.jpg" alt="Фото 1">
+                <img src="image1.jpg" alt="Фото 2">
+                <img src="image3.jpg" alt="Фото 3">
+                <img src="image4.jpg" alt="Фото 4">
+                <img src="image5.jpg" alt="Фото 5">
+                <img src="image2.jpg" alt="Фото 6">
+                <img src="image7.jpg" alt="Фото 7">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Конвертер валют</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.burger-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+
+</html>

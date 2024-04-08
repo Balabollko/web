@@ -1,0 +1,203 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    /* Колір з прозорістю */
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Збільшення яскравості */
+    z-index: -2;
+}
+
+
+
+header,
+footer {
+    background-color: #333333ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Сховати бургер-меню на початку */
+.burger-menu {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.burger-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-menu li {
+    margin: 5px 0;
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.burger-menu a.active {
+    background-color: #333;
+    color: #2285ac;
+}
+
+table {
+    font-size: 15px;
+    /* Зменшення розміру шрифту */
+}
+
+/* Відображення основного меню на більших екранах */
+.menu {
+    display: none;
+}
+.services {
+    display: flex;
+    /* Використовуємо flex для розміщення візитівок в рядок */
+    justify-content: space-around;
+    /* Рівномірно розподіляємо візитівки по ширині контейнера */
+    align-items: center;
+    /* Вирівнюємо візитівки по вертикалі по центру */
+    flex-wrap: wrap;
+    /* Розриваємо рядок, якщо візитівок стає забагато */
+    margin-top: 20px;
+    /* Відступ зверху */
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    /* position: relative; встановлює елементу відносне позиціонування */
+}
+
+.card h3 {
+    margin-top: -5px;
+    border-radius: 40px;
+    background-color: #602ca58f;
+    color: #fafafa;
+    padding: 5px;
+}
+
+.card a {
+    font-size: 22px;
+    position: absolute;
+    /*position: absolute; для кнопки всередині .card, щоб позиціонувати кнопку відносно .card. Наприклад, bottom: 20px;  */
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.card p {
+    font-size: 22px;
+
+}
+
+.button {
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #5400f0;
+    padding: 5px 10px;
+    text-decoration: none;
+
+}
+ button {
+     margin-top: 25px;
+     scale: 2;
+ }
+
+@media only screen and (min-width: 768px) {
+
+    .burger-menu-button {
+        display: none;
+    }
+
+    /* Відображення основного меню на великих екранах */
+    .menu {
+        display: flex;
+    }
+
+
+
+
+}
