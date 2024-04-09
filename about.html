@@ -1,70 +1,65 @@
-
-<!DOCTYPE html>
-<html lang="uk">
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конвертер валют - Про нас</title>
-    <link rel="stylesheet" href="about.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About me page">
+  <meta name="keywords" content="about me">
+  <title>About Me</title>
+  <link rel="stylesheet" href="CSS/style3.css">
 </head>
-
 <body>
-    <header>
-        <h1>Конвертер валют - Про нас</h1>
-        <div class="burger-menu-button">
-            <button onclick="toggleMenu()">Меню</button>
-        </div>
-        <nav class="burger-menu">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html"class="active">Про нас</a></li>
-                <li><a href="services.html">Послуги</a></li>
-                <li><a href="gallery.html">Фотогалерея</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
-        <nav class="menu">
-            <a href="index.html">Головна</a>
-            <a href="about.html"class="active">Про нас</a>
-            <a href="services.html">Послуги</a>
-            <a href="gallery.html">Фотогалерея</a>
-            <a href="contact.html">Контакти</a>
-            <a href="ff.html">Контакти</a>
-        </nav>
-    </header>
-    <main>
-        <section class="b">
-        <img src="S5s.gif" style="float: right; margin-right: 20px;">
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>About Me</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a> </li>
+          <li><a href="about.html">About</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <section id="showcase">
+      <div class="container">
+        <h1>I am Student in MAIT</h1>
+        <p>My hobbies are as follows...
+
+Coding: I love building games and other interesting projects with my mates Erkin and Giles from the states.
+Listening to Podcasts: Whether it's Politics, Indian sports commentary or hip hop breakdowns, I always find time to stay up to date with an informative podcast.
+Reading: There is nothing more relaxing than curling up with a good book after a long day.</p>
+     
+    <!--  </div>
+    
     </section>
-        <h2>Ми - це моя біполярка, яка працює над створенням зручного та надійного конвертера валют.</h2>
-        
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li>Іван Кіргван - засновник</li>
-                <li>Петро Щур - керівник відділу розробки</li>
-                <li>Папа Карло - графічний дизайнер</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Наша місія</h2>
-            <p>Ми прагнемо забезпечити наших користувачів надійним та зручним сервісом конвертації валют для їх потреб.
-            </p>
-        </section>
-        
+    <section id="socialmedia">
+      <div class="container"> -->
+        <h2>Connect me</h2>
+        <div class="box">
+          <button type="submit" class="button-1">
+            <img src="./img/facebook_logo.png" alt="">
+          </button>
+          <h3>Facebook</h3>
+        </div>
+        <div class="box">
+          <button type="submit" class="button-2">
+            <img src="./img/instagram.png" alt="">
+          </button>
+          <h3>Instagram</h3>
+        </div>
+      </div>
+      <img src="./img/mb1.jpg" alt="eu">
+    </section>
+      <footer>
+        <p>Sarthak, Copyright &copy; 2021 </p>
+      </footer>
+ 
 
-    </main>
-    <footer>
-        <p>&copy; 2024 Конвертер валют</p>
-    </footer>
-    <script>
-       function toggleMenu() {
-            const menu = document.querySelector('.burger-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        }
-    </script>
+
+
 </body>
-
 </html>
